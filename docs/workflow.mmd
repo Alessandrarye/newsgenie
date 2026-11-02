@@ -1,0 +1,27 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	classify(classify)
+	greet(greet)
+	fetch_news(fetch_news)
+	filter_news(filter_news)
+	search_web(search_web)
+	respond(respond)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> classify;
+	classify -.-> fetch_news;
+	classify -.-> greet;
+	classify -.-> search_web;
+	fetch_news --> filter_news;
+	filter_news -.-> respond;
+	filter_news -.-> search_web;
+	search_web --> respond;
+	greet --> __end__;
+	respond --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
