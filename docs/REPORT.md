@@ -1,7 +1,7 @@
 # NewsGenie: An AI-Powered Information and News Assistant
 
 **Author:** Alessandra Hershey-Zagrans\
-**Repository:** github.com/Alessandrarye/newsgenie
+**Repository:** <https://github.com/Alessandrarye/newsgenie>
 
 ## 1. Problem and approach
 
@@ -18,6 +18,8 @@ The system has four layers:
 | Data          | NewsAPI, GNews, DuckDuckGo | Real-time headlines and web search, in a fallback chain             |
 
 ![NewsGenie interface with category news, reliability ratings, and workflow trace](screenshots/app-overview.png)
+
+Full source code, tests, and setup instructions are available at <https://github.com/Alessandrarye/newsgenie>.
 
 ## 2. AI chatbot design
 
